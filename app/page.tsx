@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import InstallTip from "./components/InstallTip";
 
 const APK_URL =
-  "https://expo.dev/artifacts/eas/mQwsbx5VmTVn1E5bWqq2my.apk";
+  "https://expo.dev/artifacts/eas/dxzLMxDPK5qhfTBGhT9v44.apk";
 
 function PocketLedgerIcon({ size = 64 }: { size?: number }) {
   return (
