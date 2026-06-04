@@ -1,43 +1,13 @@
+import Image from "next/image";
 import Navbar from "./components/Navbar";
 import InstallTip from "./components/InstallTip";
 
 const APK_URL =
   "https://expo.dev/artifacts/eas/dxzLMxDPK5qhfTBGhT9v44.apk";
 
-function ExpenseManagerIcon({ size = 64 }: { size?: number }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 64 64"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="64" height="64" rx="14" fill="#0d1117" />
-      {/* Wallet outline */}
-      <path
-        d="M14 20C14 18.3 15.3 17 17 17H47C48.7 17 50 18.3 50 20V44C50 45.7 48.7 47 47 47H17C15.3 47 14 45.7 14 44V20Z"
-        stroke="#0f766e"
-        strokeWidth="2"
-        fill="none"
-      />
-      <path
-        d="M14 26H50"
-        stroke="#0f766e"
-        strokeWidth="2"
-      />
-      {/* Wallet pocket */}
-      <rect x="36" y="31" width="14" height="9" rx="2" fill="#0f766e" opacity="0.3" stroke="#0f766e" strokeWidth="1.5" />
-      <circle cx="43" cy="35.5" r="1.5" fill="#34d399" />
-      {/* Ascending bars */}
-      <rect x="19" y="37" width="4" height="7" rx="1" fill="#34d399" opacity="0.6" />
-      <rect x="25" y="33" width="4" height="11" rx="1" fill="#34d399" opacity="0.8" />
-      <rect x="31" y="29" width="4" height="15" rx="1" fill="#34d399" />
-      {/* Gold trend dot */}
-      <circle cx="33" cy="28" r="2" fill="#fbbf24" />
-    </svg>
-  );
-}
+const LATEST_UPDATE_URL =
+  "https://expo.dev/accounts/husnain129/projects/expense-tracker/updates/499eb320-c418-437f-b4a2-92ae482857b1";
+
 
 function DownloadIcon() {
   return (
@@ -150,7 +120,12 @@ export default function Home() {
               {/* Icon + name row */}
               <div className="flex items-center gap-4 mb-4">
                 <div className="flex-shrink-0 rounded-2xl overflow-hidden shadow-lg shadow-black/40">
-                  <ExpenseManagerIcon size={60} />
+                  <Image
+                    src="/expense-manager-icon.png"
+                    alt="Expense Manager icon"
+                    width={60}
+                    height={60}
+                  />
                 </div>
                 <div>
                   <h3
