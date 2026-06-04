@@ -4,7 +4,7 @@ import InstallTip from "./components/InstallTip";
 const APK_URL =
   "https://expo.dev/artifacts/eas/dxzLMxDPK5qhfTBGhT9v44.apk";
 
-function PocketLedgerIcon({ size = 64 }: { size?: number }) {
+function ExpenseManagerIcon({ size = 64 }: { size?: number }) {
   return (
     <svg
       width={size}
@@ -145,33 +145,33 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {/* PocketLedger Card */}
+            {/* Expense Manager Card */}
             <div className="app-card glass rounded-2xl p-5 sm:p-6 flex flex-col">
               {/* Icon + name row */}
               <div className="flex items-center gap-4 mb-4">
                 <div className="flex-shrink-0 rounded-2xl overflow-hidden shadow-lg shadow-black/40">
-                  <PocketLedgerIcon size={60} />
+                  <ExpenseManagerIcon size={60} />
                 </div>
                 <div>
                   <h3
                     className="text-white font-bold text-lg leading-tight"
                     style={{ fontFamily: "var(--font-syne)" }}
                   >
-                    PocketLedger
+                    Expense Manager
                   </h3>
-                  <span className="pill mt-1 inline-block">Expense Tracker</span>
+                  <span className="pill mt-1 inline-block">Budget Tracker</span>
                 </div>
               </div>
 
               {/* Description */}
               <p className="text-[#8b949e] text-sm leading-relaxed mb-4 flex-1">
-                Offline-first budget tracker with SQLite, budget periods, PKR
-                support, analytics, biometric lock, and recurring expenses.
+                Offline-first budget tracker with SQLite, multi-currency support,
+                dark mode, analytics, biometric lock, loans, and recurring expenses.
               </p>
 
               {/* Feature pills */}
               <div className="flex flex-wrap gap-1.5 mb-5">
-                {["SQLite", "Offline", "PKR", "Biometrics", "Analytics"].map(
+                {["SQLite", "Offline", "Multi-Currency", "Dark Mode", "Biometrics", "Analytics"].map(
                   (tag) => (
                     <span
                       key={tag}
