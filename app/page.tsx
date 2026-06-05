@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import InstallTip from "./components/InstallTip";
 
 const APK_URL =
-  "https://expo.dev/artifacts/eas/dxzLMxDPK5qhfTBGhT9v44.apk";
+  "https://expo.dev/artifacts/eas/iq8HpxXSCxZoS4XqTboyX5.apk";
 
 const LATEST_UPDATE_URL =
   "https://expo.dev/accounts/husnain129/projects/expense-tracker/updates/499eb320-c418-437f-b4a2-92ae482857b1";
